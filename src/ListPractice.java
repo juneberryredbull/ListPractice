@@ -17,23 +17,26 @@ public class ListPractice {
             index--;
         }
     }
-    public static ArrayList<Character> stringToList(String string){
+
+    public static ArrayList<Character> stringToList(String string) {
         ArrayList<Character> charList = new ArrayList<>();
-        for (int i = 0; i < string.length(); i++){
+        for (int i = 0; i < string.length(); i++) {
             charList.add(string.charAt(i));
         }
         return charList;
     }
-    public static ArrayList<Integer> createListWithBounds(int start, int end, int step){
+
+    public static ArrayList<Integer> createListWithBounds(int start, int end, int step) {
         ArrayList<Integer> numberList = new ArrayList<>();
-        for (int i = start; i < end; i += step){
+        for (int i = start; i < end; i += step) {
             numberList.add(i);
         }
         return numberList;
     }
-    public static ArrayList<String> findAndDestroyAllAmoebas(ArrayList<String> array){
-        for (int i = 0; i < array.size(); i++){
-            if (array.get(i).equals("amoeba")){
+
+    public static ArrayList<String> findAndDestroyAllAmoebas(ArrayList<String> array) {
+        for (int i = 0; i < array.size(); i++) {
+            if (array.get(i).equals("amoeba")) {
                 array.remove(i);
             }
         }
